@@ -106,9 +106,6 @@ namespace PresetHandler
         {
             childSynths[id].setBypassed(false); //Enable sampler
 
-			Console.print(id);
-			Console.print(patchName);
-
             if (id == "Sampler") //Transitions sampler
             {
                 childSynths[id].asSampler().loadSampleMap(patchName); //Load staccato sample map

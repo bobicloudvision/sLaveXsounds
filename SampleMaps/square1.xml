@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <samplemap ID="square1" RRGroupAmount="1.0" MicPositions=";" CrossfadeGamma="1.0">
+  
   <sample Root="66" LoKey="64" HiKey="67" LoVel="0" HiVel="127" RRGroup="1"
-          FileName="/Users/bobi/Desktop/DIRECT WAVE/square1/square1/square1_F#3_127.wav"
+          FileName="/Users/bobi/sLaveXsounds/Samples/square1/square1_F#3_127.wav"
           Duplicate="0"/>
+
 </samplemap>

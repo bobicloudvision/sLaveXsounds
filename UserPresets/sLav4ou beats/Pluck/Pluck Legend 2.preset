@@ -8,10 +8,10 @@
     <Control type="ScriptSlider" id="knbCoarseDetune" value="0.0"/>
     <Control type="ScriptSlider" id="knbFineDetune" value="0.0"/>
     <Control type="ScriptSlider" id="knbTranspose" value="0.0"/>
-    <Control type="ScriptSlider" id="Knob1" value="0.0"/>
-    <Control type="ScriptSlider" id="Knob2" value="0.0"/>
-    <Control type="ScriptSlider" id="Knob3" value="0.0"/>
-    <Control type="ScriptSlider" id="Knob4" value="0.0"/>
+    <Control type="ScriptSlider" id="Knob1" value="0.2099999934434891"/>
+    <Control type="ScriptSlider" id="Knob2" value="0.09000000357627869"/>
+    <Control type="ScriptSlider" id="Knob3" value="0.5099999904632568"/>
+    <Control type="ScriptSlider" id="Knob4" value="0.6299999952316284"/>
     <Control type="ScriptComboBox" id="cmbPatch" value="2.0"/>
   </Content>
   <MidiAutomation>

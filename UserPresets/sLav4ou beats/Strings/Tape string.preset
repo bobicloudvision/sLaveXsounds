@@ -12,6 +12,7 @@
     <Control type="ScriptSlider" id="Knob2" value="0.1599999964237213"/>
     <Control type="ScriptSlider" id="Knob3" value="0.1899999976158142"/>
     <Control type="ScriptSlider" id="Knob4" value="0.3899999856948853"/>
+    <Control type="ScriptComboBox" id="cmbPatch" value="4.0"/>
   </Content>
   <MidiAutomation>
     <Controller Controller="7" Processor="Interface" MacroIndex="-1" Start="-100.0"

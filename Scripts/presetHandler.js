@@ -19,8 +19,6 @@ namespace PresetHandler
 {
     reg patch = "";
 
-
-
     //Previous/Next preset buttons
     const var btnPreset = [];
     btnPreset[0] = Content.getComponent("btnPreset0"); //Prev
@@ -69,7 +67,7 @@ namespace PresetHandler
         loadSampleMaps(PresetHandler.patch);
 
         if(Engine.getCurrentUserPresetName() == "")
-            Content.getComponent("btnPresetBrowser").set("text", "Concert Flute I");
+            Content.getComponent("btnPresetBrowser").set("text", "DRCChaotica");
         else
             Content.getComponent("btnPresetBrowser").set("text", Engine.getCurrentUserPresetName());
 
@@ -107,6 +105,10 @@ namespace PresetHandler
         for (id in samplerIds) //Each sampler
         {
             childSynths[id].setBypassed(false); //Enable sampler
+
+
+			console.log(id);
+			console.log(patchName);
 
             if (id == "transitions") //Transitions sampler
             {

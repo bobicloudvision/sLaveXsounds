@@ -8,6 +8,11 @@
     <Control type="ScriptSlider" id="knbCoarseDetune" value="0.0"/>
     <Control type="ScriptSlider" id="knbFineDetune" value="0.0"/>
     <Control type="ScriptSlider" id="knbTranspose" value="0.0"/>
+    <Control type="ScriptSlider" id="Knob1" value="0.0"/>
+    <Control type="ScriptSlider" id="Knob2" value="0.0"/>
+    <Control type="ScriptSlider" id="Knob3" value="0.0"/>
+    <Control type="ScriptSlider" id="Knob4" value="0.0"/>
+    <Control type="ScriptComboBox" id="cmbPatch" value="1.0"/>
   </Content>
   <MidiAutomation>
     <Controller Controller="7" Processor="Interface" MacroIndex="-1" Start="-100.0"

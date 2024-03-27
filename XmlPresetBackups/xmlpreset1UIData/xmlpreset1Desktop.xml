@@ -19,7 +19,7 @@
                  width="350.0" height="30.0" bgColour="4281282356" itemColour="0"
                  itemColour2="0" textColour="0" parentComponent="pnlHeader" borderSize="0.0"
                  borderRadius="5.0">
-        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Tape string"
+        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="DRCChaotica"
                    width="285.0" height="29.0" bgColour="0" itemColour="0" itemColour2="0"
                    parentComponent="pnlPresetDisplay" enableMidiLearn="0"/>
         <Component type="ScriptButton" id="btnPreset0" x="292.0" y="9.0" text="triangleLeft"

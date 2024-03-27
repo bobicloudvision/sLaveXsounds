@@ -19,7 +19,7 @@
             <Control type="ScriptSlider" id="Knob2" value="0.1599999964237213"/>
             <Control type="ScriptSlider" id="Knob3" value="0.1899999976158142"/>
             <Control type="ScriptSlider" id="Knob4" value="0.3899999856948853"/>
-            <Control type="ScriptComboBox" id="cmbPatch" value="4.0"/>
+            <Control type="ScriptComboBox" id="cmbPatch" value="3.0"/>
           </Content>
           <UIData Source="xmlpreset1UIData"/>
         </Processor>
@@ -100,7 +100,7 @@
                    OneShot="0.0" CrossfadeGroups="0.0" Purged="0.0" Reversed="0.0"
                    NumChannels="1" UseStaticMatrix="0.0" Group0Table="" Group1Table=""
                    Group2Table="" Group3Table="" Group4Table="" Group5Table="" Group6Table=""
-                   Group7Table="" SampleMapID="EthnoLead">
+                   Group7Table="" SampleMapID="Square1">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors/>

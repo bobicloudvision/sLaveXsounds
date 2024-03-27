@@ -18,10 +18,10 @@
 */
 
 namespace Manifest
-{    
+{
     //Patch data
     const var patches = {
-        "piccolo": //Sample map identifier
+        "DRChaotica": //Sample map identifier
         {
 	        range: [74, 105], //Playable range
 	        hasFlutter: true, //Does this patch have a flutter sample map?
@@ -33,7 +33,7 @@ namespace Manifest
                 maxFade:30
 		    }
 	    },
-		"flute1":
+		"EthnoLead":
 		{
             range:[59, 96],
             hasFlutter: true,
@@ -45,7 +45,7 @@ namespace Manifest
                 maxFade:60
             }
 		},
-		"flute2":
+		"Square1":
 		{
             range:[59, 96],
             hasFlutter: true,
@@ -58,7 +58,7 @@ namespace Manifest
                 maxFade:60
             }
 		},
-		"altoFlute":
+		"TapeStrings":
 		{
 			range: [55, 91],
 			hasFlutter: true,
@@ -70,114 +70,6 @@ namespace Manifest
                 minFade:40,
                 maxFade:80
 		    }
-		},
-        "oboe1":
-        {
-	        range: [58, 91],
-	        hasFlutter: false,
-            legatoSettings:
-		    {
-                minBend:10,
-                maxBend:50,
-                minFade:25,
-                maxFade:50
-		    }
-	    },
-        "oboe2":
-        {
-	        range: [58, 91],
-	        hasFlutter: false,
-            legatoSettings:
-		    {
-                minBend:10,
-                maxBend:50,
-                minFade:25,
-                maxFade:50
-		    }
-	    },
-        "englishHorn":
-        {
-	        range: [52, 83],
-	        hasFlutter: false,
-            legatoSettings:
-		    {
-                minBend:20,
-                maxBend:60,
-                minFade:25,
-                maxFade:50
-		    }
-	    },
-        "clarinet1":
-        {
-	        range: [50, 91],
-	        hasFlutter: true,
-            legatoSettings:
-		    {
-                minBend:20,
-                maxBend:50,
-                minFade:40,
-                maxFade:80
-		    }
-	    },
-        "clarinet2":
-        {
-	        range: [50, 91],
-	        hasFlutter: true,
-            legatoSettings:
-		    {
-                minBend:20,
-                maxBend:50,
-                minFade:40,
-                maxFade:80
-		    }
-	    },
-        "bassClarinet":
-        {
-	        range: [34, 75],
-	        hasFlutter: true,
-            legatoSettings:
-		    {
-                minBend:20,
-                maxBend:50,
-                minFade:40,
-                maxFade:80
-		    }
-	    },
-        "bassoon1":
-        {
-	        range: [34, 74],
-	        hasFlutter: true,
-            legatoSettings:
-		    {
-                minBend:20,
-                maxBend:50,
-                minFade:30,
-                maxFade:60
-		    }
-	    },
-        "bassoon2":
-        {
-	        range: [34, 74],
-	        hasFlutter: true,
-            legatoSettings:
-		    {
-                minBend:20,
-                maxBend:50,
-                minFade:30,
-                maxFade:60
-		    }
-	    },
-        "contrabassoon":
-        {
-	        range: [22, 55],
-	        hasFlutter: false,
-            legatoSettings:
-		    {
-                minBend:25,
-                maxBend:50,
-                minFade:35,
-                maxFade:70
-		    }
-	    },
+		}
 	};
 }

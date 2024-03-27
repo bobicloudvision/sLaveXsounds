@@ -67,20 +67,13 @@ namespace PresetHandler
 
         colourKeys(PresetHandler.patch);
         loadSampleMaps(PresetHandler.patch);
-        loadLegatoSettings(PresetHandler.patch);
-        setRange(PresetHandler.patch);
 
         if(Engine.getCurrentUserPresetName() == "")
-            Content.getComponent("lblPreset").set("text", "Concert Flute I");
+            Content.getComponent("btnPresetBrowser").set("text", "Concert Flute I");
         else
-            Content.getComponent("lblPreset").set("text", Engine.getCurrentUserPresetName());
+            Content.getComponent("btnPresetBrowser").set("text", Engine.getCurrentUserPresetName());
 
-        //Flutter controls
-        Content.getComponent("btnCC2").set("enabled", Manifest.patches[PresetHandler.patch].hasFlutter || false);
-        Content.getComponent("knbFlutter").set("enabled", Manifest.patches[PresetHandler.patch].hasFlutter || false);
 
-        //Enable/Disable sputato
-        overlayRoundRobin.setAttribute(overlayRoundRobin.btnSputato, Manifest.patches[PresetHandler.patch].hasSputato || false);
     }
 
     inline function onbtnPresetBrowserControl(component, value)
@@ -131,25 +124,5 @@ namespace PresetHandler
         }
     }
 
-    inline function loadLegatoSettings(patchName)
-    {
-        local settings = Manifest.patches[patchName].legatoSettings; //Get instrument's settings
 
-        if (settings)
-        {
-            legato.setAttribute(legato.knbBendMin, settings.minBend);
-            legato.setAttribute(legato.knbBendMax, settings.maxBend);
-            legato.setAttribute(legato.knbFadeMin, settings.minFade);
-            legato.setAttribute(legato.knbFadeMax, settings.maxFade);
-        }
-    }
-
-    //Set the playable range
-    inline function setRange(patchName)
-    {
-        local range = Manifest.patches[patchName].range;
-
-        rangeFilter.setAttribute(rangeFilter.knbLow, range[0]);
-        rangeFilter.setAttribute(rangeFilter.knbHigh, range[1]);
-    }
 }

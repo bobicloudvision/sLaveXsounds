@@ -23,53 +23,19 @@ namespace Manifest
     const var patches = {
         "DRChaotica": //Sample map identifier
         {
-	        range: [74, 105], //Playable range
-	        hasFlutter: true, //Does this patch have a flutter sample map?
-            legatoSettings:
-		    {
-                minBend:10,
-                maxBend:40,
-                minFade:10,
-                maxFade:30
-		    }
+	        range: [0, 127], //Playable range
 	    },
 		"EthnoLead":
 		{
-            range:[59, 96],
-            hasFlutter: true,
-            legatoSettings:
-            {
-                minBend:10,
-                maxBend:40,
-                minFade:30,
-                maxFade:60
-            }
+            range:[0, 127],
 		},
 		"Square1":
 		{
-            range:[59, 96],
-            hasFlutter: true,
-            hasSputato: true,
-            legatoSettings:
-            {
-                minBend:10,
-                maxBend:40,
-                minFade:30,
-                maxFade:60
-            }
+            range:[0, 127],
 		},
 		"TapeStrings":
 		{
-			range: [55, 91],
-			hasFlutter: true,
-			hasSputato: true,
-			legatoSettings:
-		    {
-                minBend:10,
-                maxBend:50,
-                minFade:40,
-                maxFade:80
-		    }
+			range: [0, 127]
 		}
 	};
 }

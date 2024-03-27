@@ -2,6 +2,7 @@
 
 <Preset Version="1.0.0">
   <Content Processor="Interface">
+    <Control type="ScriptButton" id="btnPresetBrowser" value="1"/>
     <Control type="ScriptSlider" id="knbMasterGain" value="-5.999998569488525"/>
     <Control type="ScriptSlider" id="knbMasterPan" value="0.0"/>
     <Control type="ScriptSlider" id="knbCoarseDetune" value="0.0"/>

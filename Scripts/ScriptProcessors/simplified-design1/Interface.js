@@ -56,6 +56,40 @@ include("RhapsodyBoilerplate/includes/UserSettings.js");
 
 include("RhapsodyBoilerplate/includes/Spinner.js");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const var Delay1 = Synth.getEffect("Delay1");
+
+
+inline function onDelayTempoKnobControl(component, value)
+{
+	Delay1.setAttribute(Delay1.DelayTimeLeft, value);
+	Delay1.setAttribute(Delay1.DelayTimeRight, value);
+}
+
+const var DelayTempoKnob = Content.getComponent("DelayTempo").setControlCallback(onDelayTempoKnobControl);
+
+
+inline function onDelayFeedbackKnobControl(component, value)
+{
+	Delay1.setAttribute(Delay1.FeedbackLeft, value);
+	Delay1.setAttribute(Delay1.FeedbackRight, value);
+}
+
+const var DelayFeedbackKnob = Content.getComponent("DelayFeedback").setControlCallback(onDelayFeedbackKnobControl);
+
 function onNoteOn()
 {
 	

@@ -20,11 +20,11 @@ namespace PresetHandler
     reg patch = "";
 
     //Previous/Next preset buttons
-    const var btnPreset = [];
-    btnPreset[0] = Content.getComponent("btnPreset0"); //Prev
-    btnPreset[1] = Content.getComponent("btnPreset1"); //Next
-    btnPreset[0].setControlCallback(loadAdjacentPreset);
-    btnPreset[1].setControlCallback(loadAdjacentPreset);
+    //const var btnPreset = [];
+    //btnPreset[0] = Content.getComponent("btnPreset0"); //Prev
+    //btnPreset[1] = Content.getComponent("btnPreset1"); //Next
+    //btnPreset[0].setControlCallback(loadAdjacentPreset);
+    //btnPreset[1].setControlCallback(loadAdjacentPreset);
 
     //Get samplers as child synths
     const var samplerIds = Synth.getIdList("Sampler");
@@ -69,23 +69,23 @@ namespace PresetHandler
         colourKeys(PresetHandler.patch);
         loadSampleMaps(PresetHandler.patch);
 
-        if(Engine.getCurrentUserPresetName() == "")
-            Content.getComponent("btnPresetBrowser").set("text", "DRCChaotica");
-        else
-            Content.getComponent("btnPresetBrowser").set("text", Engine.getCurrentUserPresetName());
+       // if(Engine.getCurrentUserPresetName() == "")
+         //   Content.getComponent("btnPresetBrowser").set("text", "DRCChaotica");
+      //  else
+      //      Content.getComponent("btnPresetBrowser").set("text", Engine.getCurrentUserPresetName());
 
 
     }
 
-    inline function onbtnPresetBrowserControl(component, value)
-    {
-        Content.getComponent("btnSettings").setValue(0);
-        Content.getComponent("pnlPage0").set("enabled", 1-value); //Toggle instrument page enabled
-        Content.getComponent("pnlPage1").showControl(0); //Hide settings page
-        Content.getComponent("pnlPage2").showControl(value);
-    };
+   // inline function onbtnPresetBrowserControl(component, value)
+   /// {
+       // Content.getComponent("btnSettings").setValue(0);
+        //Content.getComponent("pnlPage0").set("enabled", 1-value); //Toggle instrument page enabled
+      //  Content.getComponent("pnlPage1").showControl(0); //Hide settings page
+        //Content.getComponent("pnlPage2").showControl(value);
+    //};
 
-    Content.getComponent("btnPresetBrowser").setControlCallback(onbtnPresetBrowserControl);
+  //  Content.getComponent("btnPresetBrowser").setControlCallback(onbtnPresetBrowserControl);
 
     //Functions
     inline function colourKeys(patchName)

@@ -44,6 +44,9 @@ namespace PresetHandler
 
     //Preset selection dropdown
     const var cmbPatch = Content.getComponent("cmbPatch");
+    
+    Console.print(patchNames.join("\n"));
+    
     cmbPatch.set("items", patchNames.join("\n"));
     cmbPatch.setControlCallback(cmbPatchCB);
 

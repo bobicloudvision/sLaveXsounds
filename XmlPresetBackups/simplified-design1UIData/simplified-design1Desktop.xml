@@ -15,30 +15,6 @@
                  width="22.0" height="22.0" bgColour="0" itemColour="4291809231"
                  itemColour2="4293321983" textColour="0" saveInPreset="0" parentComponent="pnlHeader"
                  enableMidiLearn="0"/>
-      <Component type="ScriptPanel" id="pnlPresetDisplay" x="635.0" y="15.0" text=""
-                 width="350.0" height="30.0" bgColour="4281282356" itemColour="0"
-                 itemColour2="0" textColour="0" parentComponent="pnlHeader" borderSize="0.0"
-                 borderRadius="5.0">
-        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Classic | Tape string"
-                   width="285.0" height="29.0" bgColour="0" itemColour="0" itemColour2="0"
-                   parentComponent="pnlPresetDisplay" enableMidiLearn="0"/>
-        <Component type="ScriptButton" id="btnPreset0" x="292.0" y="9.0" text="triangleLeft"
-                   width="8.0" height="12.0" bgColour="0" itemColour="4292927712"
-                   itemColour2="4291216837" textColour="0" saveInPreset="0" parentComponent="pnlPresetDisplay"
-                   isMomentary="1" enableMidiLearn="0"/>
-        <Component type="ScriptButton" id="btnPreset1" x="310.0" y="9.0" text="triangleRight"
-                   width="8.0" height="12.0" bgColour="0" itemColour="4292927712"
-                   itemColour2="4291216837" textColour="0" saveInPreset="0" parentComponent="pnlPresetDisplay"
-                   isMomentary="1" enableMidiLearn="0"/>
-        <Component type="ScriptButton" id="btnPresetSave" x="328.0" y="9.0" text="save"
-                   width="12.0" height="12.0" bgColour="0" itemColour="4292927712"
-                   itemColour2="4291216837" textColour="0" saveInPreset="0" parentComponent="pnlPresetDisplay"
-                   isMomentary="1" enableMidiLearn="0"/>
-      </Component>
-      <Component type="ScriptButton" id="btnUnload" x="566.0" y="19.0" text="rhapsodyLogo"
-                 width="22.0" height="22.0" bgColour="0" itemColour="4291809231"
-                 itemColour2="4293321983" textColour="0" saveInPreset="0" parentComponent="pnlHeader"
-                 isMomentary="1" enableMidiLearn="0"/>
     </Component>
     <Component type="ScriptPanel" id="pnlBody" x="0.0" y="60.0" text="" width="990.0"
                height="565.0" bgColour="0" itemColour="4281282356" itemColour2="4281282356"
@@ -176,29 +152,6 @@
                    text="x" width="40.0" height="36.0" bgColour="4279637529" itemColour="4288651185"
                    itemColour2="4294967295" saveInPreset="0" parentComponent="pnlSettings"
                    enableMidiLearn="0"/>
-      </Component>
-    </Component>
-    <Component type="ScriptPanel" id="pnlPresetBrowserContainer" x="0.0" y="0.0"
-               text="" width="1000.0" height="710.0" bgColour="2013265920" itemColour="0"
-               itemColour2="0" textColour="0" parentComponent="pnlContainer"
-               borderSize="0.0" borderRadius="0.0" allowCallbacks="Clicks Only"
-               visible="0">
-      <Component type="ScriptPanel" id="pnlPresetBrowser" x="5.0" y="60.0" text=""
-                 width="990.0" height="565.0" bgColour="4281282356" itemColour="0"
-                 itemColour2="0" textColour="0" parentComponent="pnlPresetBrowserContainer"
-                 borderSize="0.0" borderRadius="12.0">
-        <Component type="ScriptFloatingTile" id="fltPresetBrowser" x="5.0" y="10.0"
-                   ContentType="PresetBrowser" width="980.0" height="550.0" bgColour="0"
-                   itemColour="4290690772" itemColour2="0" parentComponent="pnlPresetBrowser"
-                   Font="bold" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: false,&#10;  &quot;ShowNotes&quot;: true,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 15,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: true,&#10;  &quot;NumColumns&quot;: 3,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    5,&#10;    0,&#10;    -15&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    65,&#10;    15,&#10;    15,&#10;    15&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [&#10;    230,&#10;    0,&#10;    506,&#10;    36&#10;  ],&#10;  &quot;SaveButtonBounds&quot;: [&#10;    740,&#10;    0,&#10;    191,&#10;    36&#10;  ],&#10;  &quot;FavoriteButtonBounds&quot;: [&#10;    5,&#10;    0,&#10;    241,&#10;    36&#10;  ]&#10;}"/>
-        <Component type="ScriptButton" id="btnPresetBrowserClose" x="940.0" y="10.0"
-                   text="x" width="40.0" height="36.0" tooltip="Close the preset browser."
-                   bgColour="4279637529" itemColour="4288651185" itemColour2="4294967295"
-                   saveInPreset="0" parentComponent="pnlPresetBrowser" enableMidiLearn="0"/>
-        <Component type="ScriptPanel" id="pnlPresetNotesBlocker" x="10.0" y="55.0"
-                   text="" width="970.0" height="36.0" bgColour="4281282356" itemColour="0"
-                   itemColour2="0" textColour="4291480266" parentComponent="pnlPresetBrowser"
-                   borderSize="0.0" borderRadius="0.0"/>
       </Component>
     </Component>
     <Component type="ScriptPanel" id="pnlSpinnerContainer" x="0.0" y="0.0" text=""

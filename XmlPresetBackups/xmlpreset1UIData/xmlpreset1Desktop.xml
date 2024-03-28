@@ -222,7 +222,7 @@
   <Component type="ScriptSlider" id="Knob4" x="830.0" y="190.0" mode="NormalizedPercentage"
              suffix="%" middlePosition="0.5" text="Room Size" processorId="Simple Reverb1"
              parameterId="RoomSize"/>
-  <Component type="ScriptComboBox" id="cmbPatch" x="100.0" y="100.0" max="4"
+  <Component type="ScriptComboBox" id="cmbPatch" x="200.0" y="10.0" max="4"
              items="DRChaotica&#10;EthnoLead&#10;Square1&#10;TapeStrings"/>
   <Component type="ScriptFloatingTile" id="FloatingTile2" x="150.0" y="390.0"
              ContentType="AudioAnalyser" bgColour="14880784" itemColour="2046820351"
@@ -234,4 +234,7 @@
              text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
              FontSize="0.07000000029802322" bgColour="788529152" Font="Oxygen"
              textColour="1610612735" itemColour3="16777215"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile3" x="150.0" y="60.0"
+             width="660" height="300" ContentType="PresetBrowser" bgColour="4143972352"
+             itemColour="4287692721" itemColour2="0" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: true,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 3,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"/>
 </ContentProperties>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Preset Version="1.0.0">
+<Preset Version="1.0.0" Notes="">
   <Content Processor="Interface">
     <Control type="ScriptButton" id="btnPresetBrowser" value="0"/>
     <Control type="ScriptSlider" id="knbMasterGain" value="-5.999998569488525"/>

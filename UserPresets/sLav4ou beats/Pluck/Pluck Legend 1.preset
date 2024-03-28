@@ -14,6 +14,18 @@
     <Control type="ScriptSlider" id="Knob4" value="0.6800000071525574"/>
     <Control type="ScriptComboBox" id="cmbPatch" value="1.0"/>
   </Content>
+  <Modules>
+    <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="4"
+               Band0="-5.181819915771484" Band1="51.55632781982422" Band2="1.0"
+               Band3="1.0" Band4="1.0" Band5="6.0" Band6="3451.083740234375"
+               Band7="1.0" Band8="1.0" Band9="4.0" Band10="4.0909104347229"
+               Band11="8847.69921875" Band12="1.0" Band13="1.0" Band14="4.0"
+               Band15="3.545454025268555" Band16="1421.845703125" Band17="1.0"
+               Band18="1.0" Band19="4.0" FFTEnabled="0">
+      <ChildProcessors/>
+      <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+    </Processor>
+  </Modules>
   <MidiAutomation>
     <Controller Controller="7" Processor="Interface" MacroIndex="-1" Start="-100.0"
                 End="0.0" FullStart="-100.0" FullEnd="0.0" Skew="3.492788620791155"

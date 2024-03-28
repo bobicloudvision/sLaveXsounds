@@ -19,7 +19,7 @@
                  width="350.0" height="30.0" bgColour="4281282356" itemColour="0"
                  itemColour2="0" textColour="0" parentComponent="pnlHeader" borderSize="0.0"
                  borderRadius="5.0">
-        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="DRCChaotica"
+        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Tape string"
                    width="285.0" height="29.0" bgColour="0" itemColour="0" itemColour2="0"
                    parentComponent="pnlPresetDisplay" enableMidiLearn="0"/>
         <Component type="ScriptButton" id="btnPreset0" x="292.0" y="9.0" text="triangleLeft"
@@ -43,11 +43,7 @@
     <Component type="ScriptPanel" id="pnlBody" x="0.0" y="60.0" text="" width="990.0"
                height="565.0" bgColour="0" itemColour="4281282356" itemColour2="4281282356"
                textColour="0" parentComponent="pnlContainer" borderSize="0.0"
-               borderRadius="12.0">
-      <Component type="ScriptImage" id="Image1" x="0.0" y="-1.0" parentComponent="pnlBody"
-                 fileName="/Users/bobi/Desktop/360_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg"
-                 width="990.0" height="565.0"/>
-    </Component>
+               borderRadius="12.0"/>
     <Component type="ScriptPanel" id="pnlStatusBar" x="5.0" y="585.0" text=""
                width="990.0" height="39.0" bgColour="0" itemColour="4281282356"
                itemColour2="4293978318" textColour="4293059571" parentComponent="pnlContainer"
@@ -214,28 +210,28 @@
                  parentComponent="pnlSpinnerContainer" borderSize="0.0" borderRadius="0.0"/>
     </Component>
   </Component>
-  <Component type="ScriptSlider" id="Knob1" x="750.0" y="320.0" mode="NormalizedPercentage"
+  <Component type="ScriptSlider" id="Knob1" x="830.0" y="250.0" mode="NormalizedPercentage"
              suffix="%" middlePosition="0.5" text="Wet Level" processorId="Simple Reverb1"
              parameterId="WetLevel"/>
-  <Component type="ScriptSlider" id="Knob2" x="750.0" y="380.0" mode="NormalizedPercentage"
+  <Component type="ScriptSlider" id="Knob2" x="830.0" y="310.0" mode="NormalizedPercentage"
              suffix="%" middlePosition="0.5" text="Damping" processorId="Simple Reverb1"
              parameterId="Damping"/>
-  <Component type="ScriptSlider" id="Knob3" x="750.0" y="200.0" mode="NormalizedPercentage"
+  <Component type="ScriptSlider" id="Knob3" x="830.0" y="130.0" mode="NormalizedPercentage"
              suffix="%" middlePosition="0.5" text="Stereo Width" processorId="Simple Reverb1"
              parameterId="Width"/>
-  <Component type="ScriptSlider" id="Knob4" x="750.0" y="260.0" mode="NormalizedPercentage"
+  <Component type="ScriptSlider" id="Knob4" x="830.0" y="190.0" mode="NormalizedPercentage"
              suffix="%" middlePosition="0.5" text="Room Size" processorId="Simple Reverb1"
              parameterId="RoomSize"/>
   <Component type="ScriptComboBox" id="cmbPatch" x="100.0" y="100.0" max="4"
              items="DRChaotica&#10;EthnoLead&#10;Square1&#10;TapeStrings"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile1" x="260.0" y="360.0"
-             width="440.0" height="190.0" ContentType="DraggableFilterPanel"
-             bgColour="0" itemColour="2516582400" itemColour2="4278190080"
-             Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+  <Component type="ScriptFloatingTile" id="FloatingTile2" x="150.0" y="390.0"
+             ContentType="AudioAnalyser" bgColour="14880784" itemColour="2046820351"
+             itemColour2="14811136" textColour="14026503" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+             width="660.0" height="166.0" itemColour3="14681349"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile1" x="150.0" y="360.0"
+             width="660.0" height="200.0" ContentType="DraggableFilterPanel"
+             itemColour="486539263" itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
              text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
-             itemColour3="4278190080" FontSize="0.1299999952316284" textColour="4278190080"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile2" x="290.0" y="150.0"
-             ContentType="AudioAnalyser" bgColour="4286899724" itemColour="4293657604"
-             itemColour2="4293067780" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
-             width="340" height="200"/>
+             FontSize="0.07000000000000001" bgColour="788529152" Font="Oxygen"
+             textColour="1610612735" itemColour3="16777215"/>
 </ContentProperties>

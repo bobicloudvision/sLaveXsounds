@@ -104,7 +104,9 @@ namespace PresetHandler
 
         for (id in samplerIds) //Each sampler
         {
-            childSynths[id].setBypassed(false); //Enable sampler
+            //childSynths[id].setBypassed(false); //Enable sampler
+
+            Console.print("Loading sample map: " + patchName);
 
             if (id == "Sampler") //Transitions sampler
             {

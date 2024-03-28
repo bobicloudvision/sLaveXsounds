@@ -4,22 +4,50 @@
   <Component type="ScriptPanel" id="pnlContainer" x="0.0" y="0.0" text=""
              width="1000.0" height="710.0" bgColour="0" itemColour="4280098081"
              itemColour2="4280098081" textColour="0" borderSize="0.0" borderRadius="0.0">
-    <Component type="ScriptPanel" id="pnlHeader" x="0.0" y="0.0" width="1000.0"
-               height="60.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
-               parentComponent="pnlContainer" borderSize="0.0" borderRadius="0.0">
-      <Component type="ScriptButton" id="btnTitle" x="20.0" y="0.0" text="sLaveXsounds"
-                 width="200.0" height="60.0" bgColour="0" itemColour="0" itemColour2="0"
-                 textColour="4293059298" saveInPreset="0" parentComponent="pnlHeader"
-                 isMomentary="1" enableMidiLearn="0"/>
-      <Component type="ScriptButton" id="btnSettings" x="600.0" y="19.0" text="settings"
-                 width="22.0" height="22.0" bgColour="0" itemColour="4291809231"
-                 itemColour2="4293321983" textColour="0" saveInPreset="0" parentComponent="pnlHeader"
-                 enableMidiLearn="0"/>
-    </Component>
-    <Component type="ScriptPanel" id="pnlBody" x="0.0" y="60.0" text="" width="990.0"
-               height="565.0" bgColour="0" itemColour="4281282356" itemColour2="4281282356"
+    <Component type="ScriptPanel" id="pnlBody" x="0.0" y="0.0" text="" width="1020"
+               height="630" bgColour="0" itemColour="4281282356" itemColour2="4281282356"
                textColour="0" parentComponent="pnlContainer" borderSize="0.0"
-               borderRadius="12.0"/>
+               borderRadius="12.0">
+      <Component type="ScriptButton" id="btnSettings" x="960.0" y="-50" text="settings"
+                 width="22.0" height="22.0" bgColour="4294901760" itemColour="4291809231"
+                 itemColour2="4293321983" textColour="0" saveInPreset="0" parentComponent="pnlBody"
+                 enableMidiLearn="0" visible="0"/>
+      <Component type="ScriptButton" id="btnTitle" x="398.0" y="585.0" text="sLaveXsounds"
+                 width="189.0" height="33.0" bgColour="0" itemColour="0" itemColour2="0"
+                 textColour="4293059298" saveInPreset="0" parentComponent="pnlBody"
+                 isMomentary="1" enableMidiLearn="0"/>
+      <Component type="ScriptFloatingTile" id="SoundAnalyzer" x="150.0" y="392.0"
+                 ContentType="AudioAnalyser" bgColour="16777215" itemColour="2046820351"
+                 itemColour2="14811136" textColour="14026503" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 width="660.0" height="166.0" itemColour3="14681349" parentComponent="pnlBody"/>
+      <Component type="ScriptFloatingTile" id="ParametricEqPanel" x="150.0" y="375.0"
+                 width="660.0" height="200.0" ContentType="DraggableFilterPanel"
+                 itemColour="486539263" itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
+                 FontSize="0.07000000029802322" bgColour="0" Font="Oxygen" textColour="1610612735"
+                 itemColour3="16777215" parentComponent="pnlBody"/>
+      <Component type="ScriptFloatingTile" id="PersetBrowser" x="150.0" y="37.0"
+                 width="660.0" height="334.0" ContentType="PresetBrowser" bgColour="0"
+                 itemColour="4294967295" itemColour2="4294967295" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 2,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
+                 itemColour3="4294967295" parentComponent="pnlBody"/>
+      <Component type="ScriptPanel" id="Reverb" x="820.0" y="41" width="160" height="300"
+                 parentComponent="pnlBody" bgColour="16777215" itemColour="0">
+        <Component type="ScriptLabel" id="Label1" x="0" y="9" text="Reverb" fontName="Ethnocentric"
+                   fontSize="18.0" width="160" height="40" parentComponent="Reverb"/>
+        <Component type="ScriptSlider" id="Knob1" x="10.0" y="169.0" mode="NormalizedPercentage"
+                   suffix="%" middlePosition="0.5" text="Wet Level" processorId="Simple Reverb1"
+                   parameterId="WetLevel" parentComponent="Reverb" width="140" height="50"/>
+        <Component type="ScriptSlider" id="Knob2" x="10.0" y="229.0" mode="NormalizedPercentage"
+                   suffix="%" middlePosition="0.5" text="Damping" processorId="Simple Reverb1"
+                   parameterId="Damping" parentComponent="Reverb" width="140" height="50"/>
+        <Component type="ScriptSlider" id="Knob3" x="10.0" y="49.0" mode="NormalizedPercentage"
+                   suffix="%" middlePosition="0.5" text="Stereo Width" processorId="Simple Reverb1"
+                   parameterId="Width" parentComponent="Reverb" width="140" height="50"/>
+        <Component type="ScriptSlider" id="Knob4" x="10.0" y="109.0" mode="NormalizedPercentage"
+                   suffix="%" middlePosition="0.5" text="Room Size" processorId="Simple Reverb1"
+                   parameterId="RoomSize" parentComponent="Reverb" width="140" height="50"/>
+      </Component>
+    </Component>
     <Component type="ScriptPanel" id="pnlStatusBar" x="5.0" y="585.0" text=""
                width="990.0" height="39.0" bgColour="0" itemColour="4281282356"
                itemColour2="4293978318" textColour="4293059571" parentComponent="pnlContainer"
@@ -31,7 +59,7 @@
                  width="125.0" height="15.0" tooltip="Visit the developer's website."
                  bgColour="0" itemColour="4293059571" itemColour2="4291875295"
                  textColour="0" saveInPreset="0" parentComponent="pnlStatusBar"
-                 isMomentary="1" enableMidiLearn="0"/>
+                 isMomentary="1" enableMidiLearn="0" visible="0"/>
       <Component type="ScriptFloatingTile" id="fltPeakMeter" x="730.0" y="13.0"
                  ContentType="MatrixPeakMeter" width="100.0" height="16.0" bgColour="0"
                  itemColour="4280361253" itemColour2="4284112748" textColour="0"
@@ -163,33 +191,7 @@
                  parentComponent="pnlSpinnerContainer" borderSize="0.0" borderRadius="0.0"/>
     </Component>
   </Component>
-  <Component type="ScriptSlider" id="Knob1" x="830.0" y="250.0" mode="NormalizedPercentage"
-             suffix="%" middlePosition="0.5" text="Wet Level" processorId="Simple Reverb1"
-             parameterId="WetLevel"/>
-  <Component type="ScriptSlider" id="Knob2" x="830.0" y="310.0" mode="NormalizedPercentage"
-             suffix="%" middlePosition="0.5" text="Damping" processorId="Simple Reverb1"
-             parameterId="Damping"/>
-  <Component type="ScriptSlider" id="Knob3" x="830.0" y="130.0" mode="NormalizedPercentage"
-             suffix="%" middlePosition="0.5" text="Stereo Width" processorId="Simple Reverb1"
-             parameterId="Width"/>
-  <Component type="ScriptSlider" id="Knob4" x="830.0" y="190.0" mode="NormalizedPercentage"
-             suffix="%" middlePosition="0.5" text="Room Size" processorId="Simple Reverb1"
-             parameterId="RoomSize"/>
   <Component type="ScriptComboBox" id="cmbPatch" x="230.0" y="10.0" max="4"
              items="DRChaotica&#10;EthnoLead&#10;Square1&#10;TapeStrings"
              visible="0"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile2" x="150.0" y="379.0"
-             ContentType="AudioAnalyser" bgColour="16777215" itemColour="2046820351"
-             itemColour2="14811136" textColour="14026503" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
-             width="660.0" height="166.0" itemColour3="14681349"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile1" x="150.0" y="360.0"
-             width="660.0" height="200.0" ContentType="DraggableFilterPanel"
-             itemColour="486539263" itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
-             text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
-             FontSize="0.07000000029802322" bgColour="788529152" Font="Oxygen"
-             textColour="1610612735" itemColour3="16777215"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile3" x="150.0" y="60.0"
-             width="660.0" height="300.0" ContentType="PresetBrowser" bgColour="0"
-             itemColour="4294967295" itemColour2="4294967295" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 2,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
-             itemColour3="4294967295"/>
 </ContentProperties>

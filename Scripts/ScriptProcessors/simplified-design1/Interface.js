@@ -19,7 +19,30 @@ include("RhapsodyBoilerplate/includes/Paths.js");
 //include("RhapsodyBoilerplate/includes/Expansions.js");
 
 
-include("RhapsodyBoilerplate/includes/Header.js");
+
+
+//include("RhapsodyBoilerplate/includes/Header.js");
+// btnTitle
+const btnTitle = Content.getComponent("btnTitle");
+
+const lafbtnTitle = Content.createLocalLookAndFeel();
+btnTitle.setLocalLookAndFeel(lafbtnTitle);
+
+lafbtnTitle.registerFunction("drawToggleButton", function(g, obj)
+{
+	var a = obj.area;
+
+	var fontSize = Engine.getOS() == "WIN" ? 44 : 28;
+
+	g.setColour(obj.textColour);
+	g.setFont("title", fontSize);
+	g.drawAlignedText(obj.text, [a[0], a[1] + 2 - ((Engine.getOS() == "WIN") * 5), a[2], a[3]], "left");
+});
+
+
+
+
+
 
 
 include("RhapsodyBoilerplate/includes/Footer.js");

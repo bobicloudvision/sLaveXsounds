@@ -64,10 +64,10 @@ namespace UserSettings
 		g.setColour(Colours.withAlpha(Colours.grey, 0.5));
 				
 		var versionText = Engine.getName() + ": v" + Engine.getVersion();
-		var e = Expansions.getCurrent();
+		//var e = Expansions.getCurrent();
 
-		if (isDefined(e))
-			versionText = e.getProperties().Name + ": v" + e.getProperties().Version;
+		//if (isDefined(e))
+//			versionText = e.getProperties().Name + ": v" + e.getProperties().Version;
 				
 		g.drawAlignedText(versionText, [a[0], a[3] - 30, 161, 25], "right");
 	});
@@ -269,8 +269,8 @@ namespace UserSettings
 		btnSettingsClose.setValue(true);
 	    pnlSettingsContainer.fadeComponent(true, 100);
 	    
-	    if (Engine.getName() != "Rhapsody")
-	    	Presets.hide();
+	   // if (Engine.getName() != "Rhapsody")
+	   // 	Presets.hide();
     }
     
     inline function hide()

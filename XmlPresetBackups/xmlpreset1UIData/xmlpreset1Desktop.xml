@@ -19,7 +19,7 @@
                  width="350.0" height="30.0" bgColour="4281282356" itemColour="0"
                  itemColour2="0" textColour="0" parentComponent="pnlHeader" borderSize="0.0"
                  borderRadius="5.0">
-        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Classic | Tape string"
+        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Pluck | Square1"
                    width="285.0" height="29.0" bgColour="0" itemColour="0" itemColour2="0"
                    parentComponent="pnlPresetDisplay" enableMidiLearn="0"/>
         <Component type="ScriptButton" id="btnPreset0" x="292.0" y="9.0" text="triangleLeft"
@@ -224,8 +224,8 @@
              parameterId="RoomSize"/>
   <Component type="ScriptComboBox" id="cmbPatch" x="200.0" y="10.0" max="4"
              items="DRChaotica&#10;EthnoLead&#10;Square1&#10;TapeStrings"/>
-  <Component type="ScriptFloatingTile" id="FloatingTile2" x="150.0" y="390.0"
-             ContentType="AudioAnalyser" bgColour="14880784" itemColour="2046820351"
+  <Component type="ScriptFloatingTile" id="FloatingTile2" x="150.0" y="379.0"
+             ContentType="AudioAnalyser" bgColour="16777215" itemColour="2046820351"
              itemColour2="14811136" textColour="14026503" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
              width="660.0" height="166.0" itemColour3="14681349"/>
   <Component type="ScriptFloatingTile" id="FloatingTile1" x="150.0" y="360.0"
@@ -236,6 +236,6 @@
              textColour="1610612735" itemColour3="16777215"/>
   <Component type="ScriptFloatingTile" id="FloatingTile3" x="150.0" y="60.0"
              width="660.0" height="300.0" ContentType="PresetBrowser" bgColour="0"
-             itemColour="4294967295" itemColour2="4294967295" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: false,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 2,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
+             itemColour="4294967295" itemColour2="4294967295" Data="{&#10;  &quot;ShowSaveButton&quot;: false,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: false,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: false,&#10;  &quot;ShowRenameButton&quot;: false,&#10;  &quot;ShowDeleteButton&quot;: false,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 2,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
              itemColour3="4294967295"/>
 </ContentProperties>

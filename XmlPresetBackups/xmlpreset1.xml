@@ -19,7 +19,7 @@
             <Control type="ScriptSlider" id="Knob2" value="0.1599999964237213"/>
             <Control type="ScriptSlider" id="Knob3" value="0.1899999976158142"/>
             <Control type="ScriptSlider" id="Knob4" value="0.3899999856948853"/>
-            <Control type="ScriptComboBox" id="cmbPatch" value="4.0"/>
+            <Control type="ScriptComboBox" id="cmbPatch" value="3.0"/>
           </Content>
           <UIData Source="xmlpreset1UIData"/>
         </Processor>
@@ -58,8 +58,8 @@
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
         <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="3"
-                   Band0="10.90909004211426" Band1="7030.54296875" Band2="1.0" Band3="1.0"
-                   Band4="4.0" Band5="5.727272033691406" Band6="1316.958129882812"
+                   Band0="23.72727203369141" Band1="8561.8427734375" Band2="1.0"
+                   Band3="1.0" Band4="4.0" Band5="5.727272033691406" Band6="1316.958129882812"
                    Band7="1.0" Band8="1.0" Band9="4.0" Band10="-5.454545974731445"
                    Band11="56.27517700195312" Band12="1.0" Band13="1.0" Band14="1.0"
                    FFTEnabled="0">
@@ -114,7 +114,7 @@
                    OneShot="0.0" CrossfadeGroups="0.0" Purged="0.0" Reversed="0.0"
                    NumChannels="1" UseStaticMatrix="0.0" Group0Table="" Group1Table=""
                    Group2Table="" Group3Table="" Group4Table="" Group5Table="" Group6Table=""
-                   Group7Table="" SampleMapID="TapeStrings">
+                   Group7Table="" SampleMapID="Square1">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors/>

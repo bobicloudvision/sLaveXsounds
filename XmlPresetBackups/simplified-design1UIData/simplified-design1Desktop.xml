@@ -8,8 +8,11 @@
                height="630.0" bgColour="0" itemColour="4281282356" itemColour2="4281282356"
                textColour="0" parentComponent="pnlContainer" borderSize="0.0"
                borderRadius="12.0">
-      <Component type="ScriptPanel" id="DelayPanel" x="10.0" y="60.0" width="160.0"
-                 height="210.0" itemColour="0" parentComponent="pnlBody">
+      <Component type="ScriptPanel" id="DelayPanel" x="820.0" y="330.0" width="160"
+                 height="210" itemColour="0" parentComponent="pnlBody">
+        <Component type="ScriptButton" id="EnableDelay" x="10" y="10" text="DELAY"
+                   width="140" height="30" processorId="Delay1" parameterId="Enabled"
+                   parentComponent="DelayPanel"/>
         <Component type="ScriptSlider" id="DelayTempo" x="10.0" y="100.0" parentComponent="DelayPanel"
                    text="Delay" width="140.0" height="50.0" mode="TempoSync" max="18.0"
                    stepSize="1.0" middlePosition="9.0"/>
@@ -20,9 +23,6 @@
                    height="50.0" parentComponent="DelayPanel" mode="NormalizedPercentage"
                    suffix="%" middlePosition="0.5" processorId="Delay1" parameterId="Mix"
                    text="Mix"/>
-        <Component type="ScriptLabel" id="Label2" x="0.0" y="14.0" text="Delay"
-                   fontName="Ethnocentric" fontSize="18.0" width="170.0" height="30.0"
-                   parentComponent="DelayPanel"/>
       </Component>
       <Component type="ScriptButton" id="btnSettings" x="960.0" y="-50.0" text="settings"
                  width="22.0" height="22.0" bgColour="4294901760" itemColour="4291809231"
@@ -32,26 +32,26 @@
                  width="189.0" height="33.0" bgColour="0" itemColour="0" itemColour2="0"
                  textColour="4293059298" saveInPreset="0" parentComponent="pnlBody"
                  isMomentary="1" enableMidiLearn="0"/>
-      <Component type="ScriptFloatingTile" id="SoundAnalyzer" x="150.0" y="392.0"
+      <Component type="ScriptFloatingTile" id="SoundAnalyzer" x="20.0" y="390.0"
                  ContentType="AudioAnalyser" bgColour="16777215" itemColour="2046820351"
                  itemColour2="14811136" textColour="14026503" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
-                 width="660.0" height="166.0" itemColour3="14681349" parentComponent="pnlBody"/>
-      <Component type="ScriptFloatingTile" id="ParametricEqPanel" x="160.0" y="370.0"
-                 width="660.0" height="200.0" ContentType="DraggableFilterPanel"
-                 itemColour="486539263" itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 width="420" height="160" itemColour3="14681349" parentComponent="pnlBody"/>
+      <Component type="ScriptFloatingTile" id="ParametricEqPanel" x="30.0" y="400.0"
+                 width="410" height="170" ContentType="DraggableFilterPanel" itemColour="486539263"
+                 itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
                  text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
                  FontSize="0.07000000029802322" bgColour="0" Font="Oxygen" textColour="1610612735"
                  itemColour3="16777215" parentComponent="pnlBody"/>
-      <Component type="ScriptFloatingTile" id="PersetBrowser" x="189.0" y="30.0"
-                 width="610.0" height="330.0" ContentType="PresetBrowser" bgColour="0"
+      <Component type="ScriptFloatingTile" id="PersetBrowser" x="20.0" y="10.0"
+                 width="780" height="390" ContentType="PresetBrowser" bgColour="0"
                  itemColour="4294967295" itemColour2="4294967295" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 2,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
                  itemColour3="4294967295" parentComponent="pnlBody"/>
-      <Component type="ScriptPanel" id="Reverb" x="820.0" y="41.0" width="160.0"
+      <Component type="ScriptPanel" id="Reverb" x="820.0" y="10.0" width="160.0"
                  height="300.0" parentComponent="pnlBody" bgColour="16777215"
                  itemColour="0">
-        <Component type="ScriptLabel" id="Label1" x="0.0" y="9.0" text="Reverb"
-                   fontName="Ethnocentric" fontSize="18.0" width="160.0" height="40.0"
-                   parentComponent="Reverb"/>
+        <Component type="ScriptButton" id="EnableReverb" x="10.0" y="9.0" width="140"
+                   height="30" parentComponent="Reverb" text="Enabled" processorId="Simple Reverb1"
+                   parameterId="Enabled"/>
         <Component type="ScriptSlider" id="Knob1" x="10.0" y="169.0" mode="NormalizedPercentage"
                    suffix="%" middlePosition="0.5" text="Wet Level" processorId="Simple Reverb1"
                    parameterId="WetLevel" parentComponent="Reverb" width="140.0"

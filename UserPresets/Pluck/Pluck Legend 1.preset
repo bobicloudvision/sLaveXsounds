@@ -2,26 +2,30 @@
 
 <Preset Version="1.0.0">
   <Content Processor="Interface">
-    <Control type="ScriptButton" id="btnPresetBrowser" value="0"/>
+    <Control type="ScriptButton" id="EnableDelay" value="1.0"/>
+    <Control type="ScriptSlider" id="DelayTempo" value="5.0"/>
+    <Control type="ScriptSlider" id="DelayFeedback" value="0.25"/>
+    <Control type="ScriptSlider" id="DelayMix" value="0.1099999994039536"/>
+    <Control type="ScriptButton" id="EnableReverb" value="1.0"/>
+    <Control type="ScriptSlider" id="Knob1" value="0.4699999988079071"/>
+    <Control type="ScriptSlider" id="Knob2" value="0.2199999988079071"/>
+    <Control type="ScriptSlider" id="Knob3" value="0.3600000143051147"/>
+    <Control type="ScriptSlider" id="Knob4" value="0.25"/>
     <Control type="ScriptSlider" id="knbMasterGain" value="-5.999998569488525"/>
     <Control type="ScriptSlider" id="knbMasterPan" value="0.0"/>
     <Control type="ScriptSlider" id="knbCoarseDetune" value="0.0"/>
     <Control type="ScriptSlider" id="knbFineDetune" value="0.0"/>
     <Control type="ScriptSlider" id="knbTranspose" value="0.0"/>
-    <Control type="ScriptSlider" id="Knob1" value="0.3799999952316284"/>
-    <Control type="ScriptSlider" id="Knob2" value="0.1500000059604645"/>
-    <Control type="ScriptSlider" id="Knob3" value="0.449999988079071"/>
-    <Control type="ScriptSlider" id="Knob4" value="0.6800000071525574"/>
     <Control type="ScriptComboBox" id="cmbPatch" value="1.0"/>
   </Content>
   <Modules>
     <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="4"
                Band0="-5.181819915771484" Band1="51.55632781982422" Band2="1.0"
                Band3="1.0" Band4="1.0" Band5="6.0" Band6="3451.083740234375"
-               Band7="1.0" Band8="1.0" Band9="4.0" Band10="4.0909104347229"
-               Band11="8847.69921875" Band12="1.0" Band13="1.0" Band14="4.0"
-               Band15="3.545454025268555" Band16="1421.845703125" Band17="1.0"
-               Band18="1.0" Band19="4.0" FFTEnabled="0">
+               Band7="1.0" Band8="1.0" Band9="4.0" Band10="8.727272987365723"
+               Band11="9763.8125" Band12="1.0" Band13="1.0" Band14="4.0" Band15="3.545454025268555"
+               Band16="1421.845703125" Band17="1.0" Band18="1.0" Band19="4.0"
+               FFTEnabled="0">
       <ChildProcessors/>
       <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
     </Processor>

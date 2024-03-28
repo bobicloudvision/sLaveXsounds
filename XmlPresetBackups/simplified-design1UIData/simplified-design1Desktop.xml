@@ -37,7 +37,7 @@
                  itemColour2="14811136" textColour="14026503" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 2,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
                  width="420" height="160" itemColour3="14681349" parentComponent="pnlBody"/>
       <Component type="ScriptFloatingTile" id="ParametricEqPanel" x="30.0" y="400.0"
-                 width="410" height="170" ContentType="DraggableFilterPanel" itemColour="486539263"
+                 width="770" height="170" ContentType="DraggableFilterPanel" itemColour="486539263"
                  itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
                  text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
                  FontSize="0.07000000029802322" bgColour="0" Font="Oxygen" textColour="1610612735"
@@ -50,7 +50,7 @@
                  height="300.0" parentComponent="pnlBody" bgColour="16777215"
                  itemColour="0">
         <Component type="ScriptButton" id="EnableReverb" x="10.0" y="9.0" width="140"
-                   height="30" parentComponent="Reverb" text="Enabled" processorId="Simple Reverb1"
+                   height="30" parentComponent="Reverb" text="REVERB" processorId="Simple Reverb1"
                    parameterId="Enabled"/>
         <Component type="ScriptSlider" id="Knob1" x="10.0" y="169.0" mode="NormalizedPercentage"
                    suffix="%" middlePosition="0.5" text="Wet Level" processorId="Simple Reverb1"

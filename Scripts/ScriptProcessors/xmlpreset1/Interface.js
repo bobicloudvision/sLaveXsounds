@@ -4,6 +4,9 @@ include("manifest.js");
 include("presetHandler.js");
 
 
+Engine.addModuleStateToUserPreset("Parametriq EQ1");
+
+
 include("RhapsodyBoilerplate/includes/Ui.js");
 
 

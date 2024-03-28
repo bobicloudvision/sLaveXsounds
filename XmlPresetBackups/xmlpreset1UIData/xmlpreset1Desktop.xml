@@ -19,7 +19,7 @@
                  width="350.0" height="30.0" bgColour="4281282356" itemColour="0"
                  itemColour2="0" textColour="0" parentComponent="pnlHeader" borderSize="0.0"
                  borderRadius="5.0">
-        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Tape string"
+        <Component type="ScriptButton" id="btnPresetBrowser" x="0.0" y="0.0" text="Pluck | Pluck Legend 2"
                    width="285.0" height="29.0" bgColour="0" itemColour="0" itemColour2="0"
                    parentComponent="pnlPresetDisplay" enableMidiLearn="0"/>
         <Component type="ScriptButton" id="btnPreset0" x="292.0" y="9.0" text="triangleLeft"
@@ -232,6 +232,6 @@
              width="660.0" height="200.0" ContentType="DraggableFilterPanel"
              itemColour="486539263" itemColour2="1862270975" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
              text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
-             FontSize="0.07000000000000001" bgColour="788529152" Font="Oxygen"
+             FontSize="0.07000000029802322" bgColour="788529152" Font="Oxygen"
              textColour="1610612735" itemColour3="16777215"/>
 </ContentProperties>

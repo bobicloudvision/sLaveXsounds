@@ -57,6 +57,18 @@
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
+        <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="2"
+                   Band0="11.56626605987549" Band1="7114.181640625" Band2="1.0"
+                   Band3="1.0" Band4="4.0" Band5="5.493976593017578" Band6="1917.704833984375"
+                   Band7="1.0" Band8="1.0" Band9="4.0" FFTEnabled="0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="Analyser" ID="Analyser1" Bypassed="0" BufferSize="8192.0"
+                   PreviewType="4.0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
       </ChildProcessors>
     </Processor>
     <Processor Type="GlobalModulatorContainer" ID="Global Modulator Container0"

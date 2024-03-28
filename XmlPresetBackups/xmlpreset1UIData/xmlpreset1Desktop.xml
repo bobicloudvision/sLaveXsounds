@@ -44,7 +44,7 @@
                height="565.0" bgColour="0" itemColour="4281282356" itemColour2="4281282356"
                textColour="0" parentComponent="pnlContainer" borderSize="0.0"
                borderRadius="12.0">
-      <Component type="ScriptImage" id="Image1" x="0.0" y="0.0" parentComponent="pnlBody"
+      <Component type="ScriptImage" id="Image1" x="0.0" y="-1.0" parentComponent="pnlBody"
                  fileName="/Users/bobi/Desktop/360_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg"
                  width="990.0" height="565.0"/>
     </Component>
@@ -226,6 +226,16 @@
   <Component type="ScriptSlider" id="Knob4" x="750.0" y="260.0" mode="NormalizedPercentage"
              suffix="%" middlePosition="0.5" text="Room Size" processorId="Simple Reverb1"
              parameterId="RoomSize"/>
-  <Component type="ScriptComboBox" id="cmbPatch" x="270.0" y="190.0" max="4"
+  <Component type="ScriptComboBox" id="cmbPatch" x="100.0" y="100.0" max="4"
              items="DRChaotica&#10;EthnoLead&#10;Square1&#10;TapeStrings"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile1" x="260.0" y="360.0"
+             width="440.0" height="190.0" ContentType="DraggableFilterPanel"
+             bgColour="0" itemColour="2516582400" itemColour2="4278190080"
+             Data="{&#10;  &quot;ProcessorId&quot;: &quot;Parametriq EQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+             text="Bypass" processorId="Parametriq EQ1" parameterId="Bypass"
+             itemColour3="4278190080" FontSize="0.1299999952316284" textColour="4278190080"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile2" x="290.0" y="150.0"
+             ContentType="AudioAnalyser" bgColour="4286899724" itemColour="4293657604"
+             itemColour2="4293067780" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+             width="340" height="200"/>
 </ContentProperties>

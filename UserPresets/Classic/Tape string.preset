@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Preset Version="1.0.0" Notes="">
+<Preset Version="1.0.0">
   <Content Processor="Interface">
     <Control type="ScriptButton" id="btnPresetBrowser" value="0"/>
     <Control type="ScriptSlider" id="knbMasterGain" value="-5.999998569488525"/>
@@ -15,14 +15,12 @@
     <Control type="ScriptComboBox" id="cmbPatch" value="4.0"/>
   </Content>
   <Modules>
-    <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="5"
-               Band0="-5.181819915771484" Band1="51.55632781982422" Band2="1.0"
-               Band3="1.0" Band4="1.0" Band5="7.909090042114258" Band6="196.0259857177734"
-               Band7="1.0" Band8="1.0" Band9="4.0" Band10="7.636363983154297"
-               Band11="470.6112670898438" Band12="1.0" Band13="1.0" Band14="4.0"
-               Band15="10.09090995788574" Band16="770.2086181640625" Band17="1.0"
-               Band18="1.0" Band19="4.0" Band20="17.18181800842285" Band21="1180.397827148438"
-               Band22="1.0" Band23="1.0" Band24="4.0" FFTEnabled="0">
+    <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="3"
+               Band0="10.90909004211426" Band1="7030.54296875" Band2="1.0" Band3="1.0"
+               Band4="4.0" Band5="5.727272033691406" Band6="1316.958129882812"
+               Band7="1.0" Band8="1.0" Band9="4.0" Band10="-5.454545974731445"
+               Band11="56.27517700195312" Band12="1.0" Band13="1.0" Band14="1.0"
+               FFTEnabled="0">
       <ChildProcessors/>
       <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
     </Processor>

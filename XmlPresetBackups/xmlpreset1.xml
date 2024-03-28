@@ -15,11 +15,11 @@
             <Control type="ScriptSlider" id="knbCoarseDetune" value="0.0"/>
             <Control type="ScriptSlider" id="knbFineDetune" value="0.0"/>
             <Control type="ScriptSlider" id="knbTranspose" value="0.0"/>
-            <Control type="ScriptSlider" id="Knob1" value="0.2099999934434891"/>
-            <Control type="ScriptSlider" id="Knob2" value="0.09000000357627869"/>
-            <Control type="ScriptSlider" id="Knob3" value="0.5099999904632568"/>
-            <Control type="ScriptSlider" id="Knob4" value="0.6299999952316284"/>
-            <Control type="ScriptComboBox" id="cmbPatch" value="2.0"/>
+            <Control type="ScriptSlider" id="Knob1" value="0.3600000143051147"/>
+            <Control type="ScriptSlider" id="Knob2" value="0.1599999964237213"/>
+            <Control type="ScriptSlider" id="Knob3" value="0.1899999976158142"/>
+            <Control type="ScriptSlider" id="Knob4" value="0.3899999856948853"/>
+            <Control type="ScriptComboBox" id="cmbPatch" value="4.0"/>
           </Content>
           <UIData Source="xmlpreset1UIData"/>
         </Processor>
@@ -51,16 +51,18 @@
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="SimpleReverb" ID="Simple Reverb1" Bypassed="0" RoomSize="0.6299999952316284"
-                   Damping="0.09000000357627869" WetLevel="0.2099999934434891" DryLevel="0.7900000214576721"
-                   Width="0.5099999904632568" FreezeMode="0.1000000014901161">
+        <Processor Type="SimpleReverb" ID="Simple Reverb1" Bypassed="0" RoomSize="0.3899999856948853"
+                   Damping="0.1599999964237213" WetLevel="0.3600000143051147" DryLevel="0.6399999856948853"
+                   Width="0.1899999976158142" FreezeMode="0.1000000014901161">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
-        <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="2"
-                   Band0="-5.181819915771484" Band1="51.55632781982422" Band2="1.0"
-                   Band3="1.0" Band4="1.0" Band5="9.272727012634277" Band6="4488.07421875"
-                   Band7="1.0" Band8="1.0" Band9="4.0" FFTEnabled="0">
+        <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="3"
+                   Band0="10.90909004211426" Band1="7030.54296875" Band2="1.0" Band3="1.0"
+                   Band4="4.0" Band5="5.727272033691406" Band6="1316.958129882812"
+                   Band7="1.0" Band8="1.0" Band9="4.0" Band10="-5.454545974731445"
+                   Band11="56.27517700195312" Band12="1.0" Band13="1.0" Band14="1.0"
+                   FFTEnabled="0">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
@@ -112,7 +114,7 @@
                    OneShot="0.0" CrossfadeGroups="0.0" Purged="0.0" Reversed="0.0"
                    NumChannels="1" UseStaticMatrix="0.0" Group0Table="" Group1Table=""
                    Group2Table="" Group3Table="" Group4Table="" Group5Table="" Group6Table=""
-                   Group7Table="" SampleMapID="EthnoLead">
+                   Group7Table="" SampleMapID="TapeStrings">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors/>
